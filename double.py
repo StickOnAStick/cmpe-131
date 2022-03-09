@@ -1,7 +1,3 @@
-
-from curses import wrapper
-
-
 def doubler(func):
     def wrapper():
         if(func() == None):
