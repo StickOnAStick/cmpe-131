@@ -7,8 +7,7 @@ def doubler(func):
         if(func() == None):
             return
         elif():
-            func()
-            func()
+            return 2*func()
     return wrapper
 
 def functionToWrap():
