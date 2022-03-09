@@ -3,9 +3,8 @@ def doubler(func):
         if(func() == None):
             return
         elif():
-            func()
-            func()
-            return 
+            val = 2*func()
+            return val
     return wrapper
 
 def functionToWrap():
