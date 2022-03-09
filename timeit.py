@@ -7,7 +7,7 @@ def calculate_time(func):
         print("This is the decorator!")
         func()
         time_end = time.time()
-        print("It took " + str(time_end-time_start) + " seconds to run the function")
+        print("Total time " + str(time_end-time_start))
     return wrapper
 
 @calculate_time

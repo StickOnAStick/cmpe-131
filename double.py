@@ -4,7 +4,10 @@ from curses import wrapper
 
 def doubler(func):
     def wrapper():
-       2 * func()
+        if(func() == None):
+            return
+        elif():
+            2 * func()
     return wrapper
 
 def functionToWrap():
