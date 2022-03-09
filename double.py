@@ -1,6 +1,6 @@
 def doubler(func):
     def wrapper():
-        if(type(func()) == None):
+        if(func() == None):
            return
         else:
             val = 2*func()
