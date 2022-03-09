@@ -7,7 +7,7 @@ def sort_list(list):
 
     #Data type checking 
     if(n==0):
-        return
+        return []
     elif( (type(list[0]) is not int) and (type(list[0]) is not float) and (type(list[0]) is not str) ):
         #if not int or float array, exit function
         print("ERROR: Wrong data type for sorting, please enter int or float values")

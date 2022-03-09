@@ -6,7 +6,7 @@ def howLongDoItakeToRun():
         n -= 1
     return 
 
-def timeDecorator(func):
+def calculate_time(func):
     def wrapper():
         time_start = time.time()
         print("This is the decorator!")
@@ -15,7 +15,7 @@ def timeDecorator(func):
         print("It took " + str(time_end-time_start) + " seconds to run the function")
     return wrapper
 
-howLongDoItakeToRun = timeDecorator(howLongDoItakeToRun)
+howLongDoItakeToRun = calculate_time(howLongDoItakeToRun)
 
 howLongDoItakeToRun()
 
