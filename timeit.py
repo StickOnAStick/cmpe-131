@@ -1,10 +1,5 @@
 import time
 
-def howLongDoItakeToRun():
-    n = 10000000
-    while n > 0:
-        n -= 1
-    return 
 
 def calculate_time(func):
     def wrapper():
@@ -15,7 +10,13 @@ def calculate_time(func):
         print("It took " + str(time_end-time_start) + " seconds to run the function")
     return wrapper
 
-howLongDoItakeToRun = calculate_time(howLongDoItakeToRun)
+@calculate_time
+def howLongDoItakeToRun():
+    n = 10000000
+    while n > 0:
+        n -= 1
+    return 
+
 
 howLongDoItakeToRun()
 
