@@ -1,8 +1,8 @@
 from flask import Flask
 
-app = Flask(__name__)
+myobj = Flask(__name__)
 
-app.config.from_mapping(
+myobj.config.from_mapping(
     SECRET_KEY = "You will never guess"
 )
 

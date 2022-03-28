@@ -1,8 +1,8 @@
-from app import app
+from app import myobj
 #from app.login import LoginForm
 from flask import render_template, flash
 
-@app.route('/')
+@myobj.route('/')
 def home():
     name = "Nicholas"
     city_names = ["Paris", "London", "Rome", "Thaiti"]
