@@ -1,4 +1,5 @@
 from flask import Flask
+from config import Config
 
 myobj = Flask(__name__)
 
