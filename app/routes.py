@@ -10,7 +10,7 @@ city_names = ["Paris", "London", "Rome", "Thaiti"]
 def home():
         if request.method == 'POST':
                 city = request.form['input']
-                flash()
+                flash(city)
                 return render_template("Home.html" , name = name , city_names = city_names)
         else:
                 return render_template("Home.html" , name = name , city_names = city_names)
