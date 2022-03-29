@@ -1,7 +1,6 @@
 from app import myobj
 #from app.login import LoginForm
 from flask import Flask, render_template, request, flash
-import re
 
 name = "Nicholas"
 city_names = ["Paris", "London", "Rome", "Thaiti"]
